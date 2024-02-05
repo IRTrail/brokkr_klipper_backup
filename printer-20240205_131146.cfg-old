@@ -39,21 +39,19 @@ step_pin: PE3
 dir_pin: PF13
 enable_pin: !PF14
 rotation_distance: 40
-microsteps: 64
+microsteps: 16
 full_steps_per_rotation: 200
 endstop_pin: sb2040:gpio29
 position_min: 0
 position_endstop: 350
 position_max: 350
-homing_speed: 20
-homing_retract_dist: 0
+homing_speed: 60
+homing_retract_dist: 5
 homing_positive_dir: true
 
 [tmc2209 stepper_x]
 uart_pin: PF12
-diag_pin: ^PG11
-driver_SGTHRS: 255
-interpolate: False
+interpolate: True
 run_current: 1.0
 sense_resistor: 0.110
 stealthchop_threshold: 0
@@ -65,21 +63,19 @@ step_pin: PE2
 dir_pin: PC5
 enable_pin: !PF11
 rotation_distance: 40
-microsteps: 64
+microsteps: 16
 full_steps_per_rotation: 200
 endstop_pin: PG10
 position_min: 0
 position_endstop: 350
 position_max: 350
-homing_speed: 20
-homing_retract_dist: 0
+homing_speed: 60
+homing_retract_dist: 5
 homing_positive_dir: true
 
 [tmc2209 stepper_y]
 uart_pin: PC4
-diag_pin: ^PG12
-driver_SGTHRS: 255
-interpolate: False
+interpolate: True
 run_current: 1.0
 sense_resistor: 0.110
 stealthchop_threshold: 0
@@ -97,7 +93,7 @@ dir_pin: PF0
 enable_pin: !PC15
 rotation_distance: 40
 gear_ratio: 80:16
-microsteps: 64
+microsteps: 32
 endstop_pin: probe:z_virtual_endstop
 position_max: 340
 position_min: -3.0
@@ -107,7 +103,7 @@ homing_retract_dist: 3
 
 [tmc2209 stepper_z]
 uart_pin: PF1
-interpolate: False
+interpolate: true
 run_current: 1.0
 sense_resistor: 0.110
 stealthchop_threshold: 0
@@ -121,11 +117,11 @@ dir_pin: !PG0
 enable_pin: !PG1
 rotation_distance: 40
 gear_ratio: 80:16
-microsteps: 64
+microsteps: 32
 
 [tmc2209 stepper_z1]
 uart_pin: PF15
-interpolate: False
+interpolate: true
 run_current: 1.0
 sense_resistor: 0.110
 stealthchop_threshold: 0
@@ -139,11 +135,11 @@ dir_pin: PE8
 enable_pin: !PE9
 rotation_distance: 40
 gear_ratio: 80:16
-microsteps: 64
+microsteps: 32
 
 [tmc2209 stepper_z2]
 uart_pin: PE7
-interpolate: False
+interpolate: true
 run_current: 1.0
 sense_resistor: 0.110
 stealthchop_threshold: 0
@@ -157,11 +153,11 @@ dir_pin: !PE11
 enable_pin: !PF2
 rotation_distance: 40
 gear_ratio: 80:16
-microsteps: 64
+microsteps: 32
 
 [tmc2209 stepper_z3]
 uart_pin: PE10
-interpolate: False
+interpolate: true
 run_current: 1.0
 sense_resistor: 0.110
 stealthchop_threshold: 0
