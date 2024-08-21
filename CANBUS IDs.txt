@@ -1,0 +1,11 @@
+# Current BTT EBB36
+[mcu EBB36]
+canbus_uuid: 3de2bd8e516c
+
+# Old Mellow SB2040
+[mcu sb2040]
+canbus_uuid: 7175ec27295b
+
+
+[cartographer]
+canbus_uuid: 525be55625c7
